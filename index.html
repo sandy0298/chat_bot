@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigQuery Chatbot</title>
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding-top: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 400px;
+      height: 600px;
+      --df-messenger-font-color: #fff;
+      --df-messenger-font-family: 'Arial', sans-serif;
+      --df-messenger-chat-background: #1e1e2d;
+      --df-messenger-message-user-background: #007bff;
+      --df-messenger-message-bot-background: #444;
+      --df-messenger-send-icon: #007bff;
+      --df-messenger-input-placeholder-font-color: #ccc;
+      --df-messenger-input-font-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to BigQuery Chatbot</h1>
+  <p>Ask anything about BigQuery!</p>
+  <df-messenger
+    project-id="neat-fin-444809-q4"
+    agent-id="d1d57cc1-9b41-40be-9224-fa4aa2ff2bda"
+    language-code="en">
+    <df-messenger-chat-bubble chat-title="BigQuery Chatbot"></df-messenger-chat-bubble>
+  </df-messenger>
+</body>
+</html>
